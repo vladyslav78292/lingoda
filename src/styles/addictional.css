@@ -1,0 +1,427 @@
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: 'Montserrat', sans-serif;
+}
+
+html,
+h1,
+body,
+h2,
+h3,
+h4,
+h5,
+h6,
+table,
+tr,
+td,
+th,
+ol,
+button,
+p,
+a,
+ul,
+li,
+img {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow-x: hidden;
+  background: #57D8F7;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+.qoute {
+  font-size: 18px;
+  line-height: 1.5;
+  border-top: 1px solid #000;
+  margin-top: 10px;
+  padding: 5px 5px;
+  text-align: center;
+}
+
+h1, h2, li, p {
+  color: black;
+}
+
+footer {
+  color: black;
+  background-color: rgba(251, 251, 251, 0.5);
+  padding: 50px 150px;
+  position: relative;
+  z-index: 3;
+}
+
+footer > div > p:last-of-type {
+  text-align: center;
+}
+
+footer > div {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+footer > div:first-of-type {
+  flex-direction: row;
+  justify-content: center;
+}
+footer > div > div > img {
+  width: 124px;
+}
+
+body > div:first-of-type {
+  display: none;
+}
+
+header {
+  position: absolute;
+  padding: 10px 80px;
+  z-index: 4;
+  gap: 30px;
+  top: 0;
+  width: 100%;
+  display: flex;
+  color: black;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  height: 52px;
+}
+
+main {
+  margin: 110px 50px 50px 90px;
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  font-size: 45px;
+  text-align: center;
+}
+
+p {
+  font-size: 18px;
+  margin-top: 30px;
+}
+
+main > div:first-of-type > p {
+  position: absolute;
+  top: 75%;
+  left: 80px;
+  font-size: 21px;
+  font-weight: 500;
+  line-height: 20px;
+  color: black;
+  width: 60%;
+}
+
+nav {
+  display: flex;
+  gap: 20px;
+  font-weight: bold;
+}
+
+nav > a {
+  color: black;
+}
+
+h2 {
+  font-size: 34px;
+  text-align: center;
+  margin-top: 30px;
+}
+
+article > div:first-of-type {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+article > div > div {
+  display: flex;
+  margin-top: 30px;
+  justify-content: center;
+  align-items: center;
+  width: 90vw;
+  gap: 30px;
+}
+
+article > div > div > img {
+  width: 400px;
+}
+
+article > div > div > p {
+  font-size: 18px;
+  width: 40%;
+}
+
+article > div:nth-of-type(2) {
+  display: flex;
+  margin-top: 20px;
+  justify-content: center;
+}
+
+article > div:nth-of-type(2) > p {
+  width: 90vw;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+article > section:first-of-type {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+h2:last-of-type {
+  margin-bottom: 20px;
+}
+
+
+article:nth-of-type(2) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+article:nth-of-type(2) > section {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 90vw;
+}
+
+button {
+  background-color: transparent;
+  border: none
+}
+
+.open__image, #menu-close {
+  width: 27px;
+}
+
+#menu-close {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
+header > div {
+  display: none;
+}
+
+.location {
+  gap: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 20px;
+  margin-top: 40px;
+  background: linear-gradient(#eee, transparent);
+  width: 90vw;
+}
+
+.location > div:last-of-type > div {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.location > div:last-of-type > div > a {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.location > div:last-of-type {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.location > div:last-of-type > p {
+  position: relative;
+  bottom: 70px;
+}
+
+iframe {
+  width: 400px;
+  height: 300px;
+}
+
+.location > div > p {
+  text-align: center;
+  font-size: 21px;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+
+footer > div > a {
+  color: black;
+}
+
+ul {
+  text-decoration: none;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  gap: 10px;
+}
+
+@media (max-width: 1200px) {
+  .box {
+    width: 310px;
+  }
+
+  header {
+    padding: 10px 30px;
+  }
+  main > div:first-of-type > p {
+    width: 80%;
+  }
+
+  main {
+    margin-left: 50px;
+  }
+}
+
+@media (max-width: 910px) {
+  .location {
+    justify-content: space-between;
+  }
+
+  iframe {
+    width: 280px;
+    height: 240px;
+  }
+
+  .location > div:last-of-type > p {
+    bottom: 45px;
+  }
+}
+
+@media (max-width: 810px) {
+  .reviews {
+    gap: 0px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .box {
+    max-width: 350px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 720px) {
+  main {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  header {
+    padding: 10px 20px;
+  }
+
+  footer {
+    padding: 20px 16px;
+  }
+
+  h1 {
+    left: 20px;
+    top: 60%;
+    line-height: 30px;
+    font-size: 35px;
+  }
+
+  main > div:first-of-type > p {
+    font-size: 18px;
+    line-height: 24px;
+    left: 20px;
+    width: 80%;
+    top: 68%;
+  }
+
+  article > div > div {
+    flex-direction: column;
+  }
+
+  article > div > div > p {
+    width: 100%;
+  }
+
+  article > div > div > img {
+    width: 100%;
+  }
+
+  header > div {
+    display: inline-block;
+  }
+
+  body > div:first-of-type {
+    position: absolute;
+    width: 200px;
+    height: 45%;
+    display: flex;
+    right: 0;
+    top: 0;
+    background-color: #cecece;
+    z-index: 5;
+    border-radius: 0 0 0 70%;
+  }
+
+  #burger-menu > nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  #burger-menu {
+    position: absolute;
+    transform: translateX(100%);
+    justify-content: center;
+    transition: all 0.2s ease-in;
+  }
+
+  .open {
+    transform: translateX(0%) !important;
+  }
+
+  .location {
+    padding: 20px 10px;
+    flex-direction: column;
+  }
+
+  .location > div:last-of-type > div > a {
+    letter-spacing: -0.5px;
+    font-size: 17px;
+  }
+
+  .location > div:last-of-type > p {
+    bottom: 10px;
+  }
+
+  iframe {
+    width: 100%;
+    height: 240px;
+  }
+
+  .welcome-banner img {
+    object-position: 70% 0px;
+  }
+}
